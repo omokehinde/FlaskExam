@@ -5,7 +5,7 @@ from flask.ext.migrate import Migrate, MigrateCommand
 from app import app, db
 
 
-app.config.from_object('config.ProductionConfig')
+app.config.from_object('config.StagingConfig')
 
 migrate = Migrate(app, db)
 manager = Manager(app)

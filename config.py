@@ -9,7 +9,8 @@ class Config(object):
 	TESTING = False
 	CSRF_ENABLE = True
 	SECRET_KEY = 'THISkeyIsHard2know@@1'
-	SQLALCHEMY_DATABASE_URI = 'postgresql://oroka:oroka@localhost/orokadb'
+	# SQLALCHEMY_DATABASE_URI = 'postgresql://oroka:oroka@localhost/orokadb'
+	DATABASE_URL: postgres://zffnnmdysyzxls:yz7HoxKeLVukNdG4qbkPDe6Rhz@ec2-54-243-249-154.compute-1.amazonaws.com:5432/dd85dp46a8q63b
 
 class ProductionConfig(Config):
 	DEBUG = False

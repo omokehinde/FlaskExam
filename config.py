@@ -1,11 +1,15 @@
 import os
+
+
+
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config(object):
 	DEBUG = False
 	TESTING = False
-	CSRF_ENABLE =True
+	CSRF_ENABLE = True
 	SECRET_KEY = 'THISkeyIsHard2know@@1'
+	SQLALCHEMY_DATABASE_URI = 'postgresql://oroka:oroka@localhost/orokadb'
 
 class ProductionConfig(Config):
 	DEBUG = False
